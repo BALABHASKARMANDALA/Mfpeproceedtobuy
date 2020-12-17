@@ -48,7 +48,7 @@ namespace ProceedToBuyService.Provider
 
 
             //client.BaseAddress = new Uri("https://localhost:44388/");
-            client.BaseAddress = new Uri("http://40.88.230.176/");
+            client.BaseAddress = new Uri("http://40.76.144.8/");
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             HttpResponseMessage response = client.GetAsync("api/Vendor/GetVendorDetails/" + prodid).Result;
