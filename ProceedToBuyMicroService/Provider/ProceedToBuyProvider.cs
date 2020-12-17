@@ -64,18 +64,18 @@ namespace ProceedToBuyService.Provider
 
                 foreach (VendorDto v in vendorsdto)
                 {
-                    if (v.Rating >= max)
+                    if (v.rating >= max)
                     {
-                        max = v.Rating;
+                        max = v.rating;
                         taggeddto = v;
                     }
                 }
                 Vendor taggedvendor = new Vendor()
                 {
-                    VendorId = taggeddto.VendorId,
-                    VendorName = taggeddto.VendorName,
-                    Rating = taggeddto.Rating,
-                    DeliveryCharge = taggeddto.DeliveryCharge
+                    VendorId = taggeddto.vendorId,
+                    VendorName = taggeddto.vendorName,
+                    Rating = taggeddto.rating,
+                    DeliveryCharge = taggeddto.deliveryCharge
                 };
                 
                
