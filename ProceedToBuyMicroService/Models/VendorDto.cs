@@ -7,9 +7,9 @@ namespace ProceedToBuyService.Models
 {
     public class VendorDto
     {
-        public int VendorId { get; set; }
-        public string VendorName { get; set; }
-        public int Rating { get; set; }
-        public double DeliveryCharge { get; set; }
+        public int vendorId { get; set; }
+        public string vendorName { get; set; }
+        public int rating { get; set; }
+        public double deliveryCharge { get; set; }
     }
 }
